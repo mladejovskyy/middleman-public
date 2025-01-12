@@ -1,0 +1,27 @@
+body {
+  min-height: 100vh;
+}
+
+.not-found {
+  min-height: 59vh;
+  padding-top: 10vh;
+  display: grid;
+  align-items: center;
+}
+
+.not-found div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.not-found h1 {
+  font-weight: 800;
+  color: #216FFF;
+}
+
+.not-found h3 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}

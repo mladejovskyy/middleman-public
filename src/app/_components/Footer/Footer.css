@@ -1,0 +1,135 @@
+footer {
+    background-color: transparent;
+}
+
+footer .row {
+    padding: 54px 0 36px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+footer .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer img.logo {
+    height: 34px;
+    cursor: pointer;
+}
+
+footer p.slogan {
+    margin-top: 8px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+footer p.ico {
+    margin-top: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer ul {
+    display: grid;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+footer ul li {
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+footer ul li:hover {
+    color: #216FFF;
+}
+
+footer .link {
+    color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 28px auto;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.15s ease-in-out;
+}
+
+footer .link:hover {
+    color: #216FFF;
+}
+
+footer .link svg, footer .link img {
+    fill: #fff;
+    color: #fff;
+    transition: all 0.15s ease-in-out;
+    border-radius: 10px;
+    height: 28px;
+    width: 28px;
+    /*background-color: rgba(255, 255, 255, 0.15);*/
+    padding: 4px;
+    margin-right: 12px;
+}
+
+footer .author span {
+    color: #216FFF;
+    font-weight: 600;
+}
+
+footer .copyright, footer .author {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 1280px) {
+    footer .row {
+        grid-template-columns: 1fr 0.3fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    footer .row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .group.empty {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .row .item.right ul {
+        flex-direction: column;
+        margin-top: 12px;
+        gap: 22px;
+    }
+
+    footer .item.right h3.sm-show {
+        display: initial;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    footer .bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .bottom * {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    footer .row {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,125 @@
+/* Ensure the navbar stays fixed at the top */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.2s ease;
+    /*background-color: transparent;*/
+    background-color: rgba(4, 4, 4, 0.8);
+    background-image: url('/images/body-bg.webp');
+    backdrop-filter: blur(10px);
+}
+
+/* Background color change on scroll */
+.nav.scrolled {
+    background-color: #040404;
+    background-image: url('/images/body-bg.webp');
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px !important;
+}
+
+/* Logo */
+.nav-logo {
+    min-height: 46px;
+    max-height: 46px;
+    cursor: pointer;
+}
+
+/* Default styles for the navigation links */
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+nav ul li {
+    list-style: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav ul li span {
+    transition: color 0.15s ease-in-out;
+}
+
+nav ul li span:hover {
+    color: #216FFF;
+}
+
+/* Burger menu styles for small screens */
+nav .burger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+    transition: transform 0.3s ease;
+}
+
+nav .burger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+nav .burger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+nav .burger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+nav .burger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive styles */
+@media (max-width: 1280px) {
+    nav .burger-menu {
+        display: flex;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1280px) {
+    nav .burger-menu {
+        display: flex;
+    }
+
+    nav ul.nav-links {
+        position: fixed;
+        top: 76px;
+        right: 0;
+        max-height: 0;
+        margin: 0 auto;
+        opacity: 0.6;
+        width: 100%;
+        display: flex; /* Added display property to improve flexbox usage */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #040404;
+        background-image: url('/images/body-bg.webp');
+        background-repeat: repeat;
+        gap: 50px;
+        transform: translateY(-10px); /* Slight initial translate to enhance effect */
+        transition: max-height 0.3s ease-in-out, padding 0.4s ease-in-out, opacity 0.3s ease-in-out, transform 0.4s ease;
+        box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.4);
+        overflow: hidden; /* Ensures content is hidden when max-height is 0 */
+    }
+
+    nav ul.nav-links.open {
+        max-height: 90vh;
+        padding: 50px 0;
+        opacity: 1;
+        transform: translateY(0); /* Restores translate position to default */
+    }
+}

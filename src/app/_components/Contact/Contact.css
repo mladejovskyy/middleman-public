@@ -1,0 +1,193 @@
+.contact {
+    background: url('/images/contact-bg.webp') no-repeat center center;
+    background-size: cover;
+    padding: 40px 0 40px 0;
+    position: relative;
+}
+
+.contact h2, .contact h4, .contact {
+    color: #fff;
+}
+
+.contact .row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 36px;
+    gap: 60px;
+}
+
+.contact .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .hidden-field {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+.contact form .form-control {
+    display: grid;
+}
+
+.contact form .form-control:first-of-type {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 18px 20px;
+    border-radius: 8px;
+    color: #333333;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    outline: none;
+}
+
+.contact form textarea {
+    margin-top: 20px;
+    min-height: 8rem;
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 16px 38px;
+}
+
+.contact form div:last-of-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form div:last-of-type span {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.contact form div:last-of-type span .form-link {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 6px;
+}
+
+.contact form div:last-of-type span .form-link:hover {
+    text-decoration: underline;
+}
+
+.contact .links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    gap: 24px;
+}
+
+.contact .link svg, .contact .link img {
+    fill: #fff;
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    margin-right: 12px;
+}
+
+.contact .item.right div:first-of-type svg {
+    padding: 14px;
+}
+
+.contact .link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.contact .link span {
+    transition: color 0.15s ease-in-out;
+}
+
+.contact .link:hover span {
+    color: #216FFF;
+}
+
+.contact .map {
+    height: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+@media (max-width: 1280px) {
+    .contact .row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact .item.right {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: start;
+    }
+
+    .contact .links {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+    
+    .contact .map {
+        width: 95%;
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 0 40px 0;
+    }
+
+    .pattern-dots {
+        max-height: 76px;
+    }
+
+    .contact .row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact .item.right {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact .links {
+        margin-top: 24px;
+    }
+
+    .contact .socials .link {
+        margin-top: 24px;
+    }
+
+    .contact form textarea {
+        min-height: 10rem;
+    }
+
+    .contact form div:last-of-type {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 640px) {
+    .contact form .form-control:first-of-type {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact form div:last-of-type {
+        align-items: stretch;
+    }
+}

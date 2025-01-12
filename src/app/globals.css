@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
+  background-color: #040404;
+  overflow-x: hidden;
+  background-image: url('/images/body-bg.webp');
+  background-repeat: repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/*======== BREAKPOINTS ========*/
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 475px) {
+}
+
+/*======== CONTAINER ========*/
+.container {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+}
+
+/*======== Headings ========*/
+h1 {
+  font-size: 78px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.2;
+}
+
+h1 span.highlight * {
+    color: #216FFF;
+  font-weight: 800;
+  text-shadow: 0 0 30px rgba(33, 111, 255, 0.35);
+}
+
+h1 span img {
+  margin-top: -10px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 8px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h3.sm {
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(33, 111, 255, 0.4);
+  -webkit-border-radius: 64px;
+  -moz-border-radius: 64px;
+  border-radius: 64px;
+  padding: 6px 14px;
+  width: fit-content;
+}
+
+h4 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+p b {
+  font-weight: 600;
+}
+
+section {
+  padding-top: 100px;
+}
+
+section.bg {
+  margin-top: 100px;
+}
+
+@media (max-width: 1536px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+/*======== BUTTONS ========*/
+.btn {
+  padding: 8px 10px 8px 24px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-weight: 600;
+  -webkit-border-radius: 256px;
+  -moz-border-radius: 256px;
+  border-radius: 256px;
+  width: fit-content;
+}
+
+.btn-primary-basic {
+  color: #fff;
+  background-color: #216FFF;
+  padding: 16px 24px;
+  border: transparent;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.btn-primary-basic:hover {
+  background-color: #1a64ee;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #216FFF;
+  border: transparent;
+  display: grid;
+  grid-template-columns: auto 42px;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #1a64ee;
+  gap: 12px;
+}
+
+.btn-primary img {
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover img {
+  transform: rotate(45deg);
+}
+
+.btn-transparent {
+  color: #fff;
+  background-color: transparent;
+  padding: 8px 10px 8px 24px;
+  border: transparent;
+  display: grid;
+  grid-template-columns: auto 42px;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.btn-transparent:hover {
+  background-color: rgba(26, 100, 238, 0.2);
+  gap: 12px;
+}
+
+.btn-transparent img {
+  transition: transform 0.2s;
+}
+
+.btn-transparent:hover img {
+  transform: rotate(45deg);
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #131313;
+  padding: 8px 10px 8px 24px;
+  border: transparent;
+  display: grid;
+  grid-template-columns: auto 42px;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.btn-secondary:hover {
+  background-color: #eeeeee;
+  gap: 12px;
+}
+
+.btn-secondary img {
+  transition: transform 0.2s;
+}
+
+.btn-secondary:hover img {
+  transform: rotate(45deg);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-outline:hover {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #216FFF;
+}
+
+.btn-simple {
+  color: #000;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}

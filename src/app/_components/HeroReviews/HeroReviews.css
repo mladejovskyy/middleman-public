@@ -1,0 +1,14 @@
+.reviews-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 48px;
+}
+
+.reviews-row img.people {
+    max-height: 55px;
+}
+
+.reviews-row p span {
+    font-weight: 600;
+}

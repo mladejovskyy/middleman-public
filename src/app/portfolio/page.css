@@ -1,0 +1,117 @@
+/*======== PORTFOLIO ========*/
+.sub-portfolio {
+    margin-top: 60px;
+}
+
+.sub-portfolio .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 32px;
+}
+
+.sub-portfolio .item {
+    overflow: hidden;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.sub-portfolio .item .bottom {
+    padding: 24px;
+}
+
+.sub-portfolio .item .top img {
+    max-width: 85%;
+    margin-left: auto;
+    transform: translateX(35px);
+}
+
+.sub-portfolio  .pills-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.sub-portfolio h4 {
+    font-size: 14px;
+    border: 1px solid #216FFF;
+    -webkit-border-radius: 64px;
+    -moz-border-radius: 64px;
+    border-radius: 64px;
+    font-weight: 800;
+    padding: 6px 10px;
+}
+
+.sub-portfolio .item.one {
+    background: url('/images/portfolio/portfolio-bg-one.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.two {
+    background: url('/images/portfolio/portfolio-bg-two.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.three {
+    background: url('/images/portfolio/portfolio-bg-three.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.four {
+    background: url('/images/portfolio/portfolio-bg-four.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.five {
+    background: url('/images/portfolio/portfolio-bg-five.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.six {
+    background: url('/images/portfolio/portfolio-bg-six.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.seven {
+    background: url('/images/portfolio/portfolio-bg-seven.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.eight {
+    background: url('/images/portfolio/portfolio-bg-eight.webp') no-repeat center center;
+    background-size: cover;
+}
+.sub-portfolio .item.nine {
+    background: url('/images/portfolio/portfolio-bg-nine.webp') no-repeat center center;
+    background-size: cover;
+}
+
+.sub-portfolio .btns-row {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1280px) {
+    .sub-portfolio .pills-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sub-portfolio .row {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 640px) {
+    .sub-portfolio .row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 475px) {
+}
