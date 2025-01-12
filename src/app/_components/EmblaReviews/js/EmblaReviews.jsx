@@ -73,7 +73,7 @@ const EmblaCarousel = (props) => {
                                                     <div className="author">
                                                         {review.img ? (
                                                             <img
-                                                                src="/images/reviews/reviews-placeholder.webp"
+                                                                src={review.img}
                                                                 alt={`Profilová fotka ${review.name}`}
                                                                 width="48"
                                                                 height="48"
